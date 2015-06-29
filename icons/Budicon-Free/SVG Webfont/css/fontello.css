@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?66223470');
+  src: url('../font/fontello.eot?66223470#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?66223470') format('woff'),
+       url('../font/fontello.ttf?66223470') format('truetype'),
+       url('../font/fontello.svg?66223470#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?66223470#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="bi_"]:before, [class*=" bi_"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.bi_com-email:before { content: '\e81a'; } /* '' */
+.bi_com-group-bubble-d:before { content: '\e827'; } /* '' */
+.bi_com-bubble:before { content: '\e837'; } /* '' */
+.bi_com-bubble-b:before { content: '\e839'; } /* '' */
+.bi_doc-attachment:before { content: '\e842'; } /* '' */
+.bi_doc-bookmark:before { content: '\e84f'; } /* '' */
+.bi_doc-briefcase-b:before { content: '\e854'; } /* '' */
+.bi_doc-briefcase-c:before { content: '\e855'; } /* '' */
+.bi_doc-file-blank-a:before { content: '\e866'; } /* '' */
+.bi_doc-folder:before { content: '\e872'; } /* '' */
+.bi_doc-folder-a:before { content: '\e873'; } /* '' */
+.bi_doc-news:before { content: '\e87f'; } /* '' */
+.bi_doc-note-pen:before { content: '\e885'; } /* '' */
+.bi_media-negative:before { content: '\e89d'; } /* '' */
+.bi_ecommerce-market:before { content: '\e8bd'; } /* '' */
+.bi_ecommerce-shopcart:before { content: '\e8c8'; } /* '' */
+.bi_ecommerce-tag-a-s:before { content: '\e8d5'; } /* '' */
+.bi_ecommerce-tag-c-s:before { content: '\e8da'; } /* '' */
+.bi_ecommerce-bag-a:before { content: '\e8e7'; } /* '' */
+.bi_editorial-trash-l:before { content: '\e8f0'; } /* '' */
+.bi_building-cabinet:before { content: '\e91f'; } /* '' */
+.bi_setting-gear-a:before { content: '\e976'; } /* '' */
+.bi_medicine-heart:before { content: '\e981'; } /* '' */
+.bi_location-alt-pin:before { content: '\e9ae'; } /* '' */
+.bi_location-pin-blank:before { content: '\e9b3'; } /* '' */
+.bi_tool-camera-a:before { content: '\e9e8'; } /* '' */
+.bi_tool-camera-b:before { content: '\e9e9'; } /* '' */
+.bi_user-single-a:before { content: '\ea03'; } /* '' */
+.bi_user-single-a-check:before { content: '\ea04'; } /* '' */
+.bi_user-single-a-cross:before { content: '\ea05'; } /* '' */
+.bi_user-single-a-minus:before { content: '\ea08'; } /* '' */
+.bi_user-single-a-plus:before { content: '\ea09'; } /* '' */
+.bi_weather-cloud-a:before { content: '\ea28'; } /* '' */
+.bi_weather-cloud-rainy-a:before { content: '\ea2a'; } /* '' */
+.bi_weather-cloud-snow-a:before { content: '\ea2c'; } /* '' */
+.bi_weather-cloud-stormy-a:before { content: '\ea2e'; } /* '' */
+.bi_web-download:before { content: '\ea3c'; } /* '' */
+.bi_web-logout:before { content: '\ea41'; } /* '' */
+.bi_web-share:before { content: '\ea4a'; } /* '' */
+.bi_web-upload:before { content: '\ea52'; } /* '' */
+.bi_web-browser-tab:before { content: '\ea5f'; } /* '' */
+.bi_music-playlist:before { content: '\ea97'; } /* '' */
+.bi_music-cd:before { content: '\eab7'; } /* '' */
+.bi_music-group-note:before { content: '\eabb'; } /* '' */
+.bi_interface-bottom:before { content: '\eac5'; } /* '' */
+.bi_interface-circle:before { content: '\ead6'; } /* '' */
+.bi_interface-cmd:before { content: '\eae1'; } /* '' */
+.bi_interface-cross:before { content: '\eae3'; } /* '' */
+.bi_interface-heart:before { content: '\eaf2'; } /* '' */
+.bi_interface-left:before { content: '\eafa'; } /* '' */
+.bi_interface-right:before { content: '\eb14'; } /* '' */
+.bi_interface-search:before { content: '\eb19'; } /* '' */
+.bi_interface-thumbnail:before { content: '\eb22'; } /* '' */
+.bi_interface-tick:before { content: '\eb23'; } /* '' */
+.bi_interface-top:before { content: '\eb24'; } /* '' */
+.bi_layout-grid:before { content: '\eb2f'; } /* '' */

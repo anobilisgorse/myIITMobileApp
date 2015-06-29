@@ -1,0 +1,28 @@
+THIS CHANGE IS FOR FULL SET
+
+Budicon Classic Set v1.3
+
+View all changes: budicon.buditanrim.co/changelog
+
+--------------
+v1.3 (13 February 2015)
+- New size added: 48px
+- Fixed a major broken path on all sizes
+- Eliminating some of dirty points on icons
+- Supported file for .Sketch
+- No longer support CSH
+- Improvement on Webfont
+
+--------------
+v1.2 (20 December 2014)
+- Fixing some minor path for PSD
+
+
+--------------
+v1.1 (19 April 2014)
+- Fixed small details for 90 icons on 16,32,64px sizes
+- Fixed small details for 120 icons on 25,50px sizes
+- Tidied up some of dirty points on few icons
+- Added new SVG for Sketch app
+- Added new .key for Keynote (Credit to Jan Jarfalk, thanks for the help)
+

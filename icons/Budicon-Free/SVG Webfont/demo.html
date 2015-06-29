@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head><!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta charset="UTF-8"><style>/*
+ * Bootstrap v2.2.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  background-color: #fff;
+}
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+.row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row:after {
+  clear: both;
+}
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 940px;
+}
+.span12 {
+  width: 940px;
+}
+.span11 {
+  width: 860px;
+}
+.span10 {
+  width: 780px;
+}
+.span9 {
+  width: 700px;
+}
+.span8 {
+  width: 620px;
+}
+.span7 {
+  width: 540px;
+}
+.span6 {
+  width: 460px;
+}
+.span5 {
+  width: 380px;
+}
+.span4 {
+  width: 300px;
+}
+.span3 {
+  width: 220px;
+}
+.span2 {
+  width: 140px;
+}
+.span1 {
+  width: 60px;
+}
+[class*="span"].pull-right,
+.row-fluid [class*="span"].pull-right {
+  float: right;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+.container:before,
+.container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.container:after {
+  clear: both;
+}
+p {
+  margin: 0 0 10px;
+}
+.lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+}
+small {
+  font-size: 85%;
+}
+h1 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+h1 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999;
+}
+h1 {
+  line-height: 40px;
+}
+h1 {
+  font-size: 38.5px;
+}
+h1 small {
+  font-size: 24.5px;
+}
+body {
+  margin-top: 90px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+  z-index: 10;
+}
+.footer {
+  color: #ddd;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer a {
+  color: #ccc;
+  text-decoration: underline;
+}
+.the-icons {
+  font-size: 14px;
+  line-height: 24px;
+}
+.switch {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  color: #666;
+}
+.switch input {
+  margin-right: 0.3em;
+}
+.codesOn .i-name {
+  display: none;
+}
+.codesOn .i-code {
+  display: inline;
+}
+.i-code {
+  display: none;
+}
+</style>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+    <script>
+      function toggleCodes(on) {
+        var obj = document.getElementById('icons');
+        
+        if (on) {
+          obj.className += ' codesOn';
+        } else {
+          obj.className = obj.className.replace(' codesOn', '');
+        }
+      }
+      
+    </script>
+  </head>
+  <body>
+    <div class="container header">
+      <h1>
+        fontello
+         <small>font demo</small>
+      </h1>
+      <label class="switch">
+        <input type="checkbox" onclick="toggleCodes(this.checked)">show codes
+      </label>
+    </div>
+    <div id="icons" class="container">
+      <div class="row">
+        <div title="Code: 0xe81a" class="the-icons span3"><i class="bi_com-email"></i> <span class="i-name">bi_com-email</span><span class="i-code">0xe81a</span></div>
+        <div title="Code: 0xe827" class="the-icons span3"><i class="bi_com-group-bubble-d"></i> <span class="i-name">bi_com-group-bubble-d</span><span class="i-code">0xe827</span></div>
+        <div title="Code: 0xe837" class="the-icons span3"><i class="bi_com-bubble"></i> <span class="i-name">bi_com-bubble</span><span class="i-code">0xe837</span></div>
+        <div title="Code: 0xe839" class="the-icons span3"><i class="bi_com-bubble-b"></i> <span class="i-name">bi_com-bubble-b</span><span class="i-code">0xe839</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe842" class="the-icons span3"><i class="bi_doc-attachment"></i> <span class="i-name">bi_doc-attachment</span><span class="i-code">0xe842</span></div>
+        <div title="Code: 0xe84f" class="the-icons span3"><i class="bi_doc-bookmark"></i> <span class="i-name">bi_doc-bookmark</span><span class="i-code">0xe84f</span></div>
+        <div title="Code: 0xe854" class="the-icons span3"><i class="bi_doc-briefcase-b"></i> <span class="i-name">bi_doc-briefcase-b</span><span class="i-code">0xe854</span></div>
+        <div title="Code: 0xe855" class="the-icons span3"><i class="bi_doc-briefcase-c"></i> <span class="i-name">bi_doc-briefcase-c</span><span class="i-code">0xe855</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe866" class="the-icons span3"><i class="bi_doc-file-blank-a"></i> <span class="i-name">bi_doc-file-blank-a</span><span class="i-code">0xe866</span></div>
+        <div title="Code: 0xe872" class="the-icons span3"><i class="bi_doc-folder"></i> <span class="i-name">bi_doc-folder</span><span class="i-code">0xe872</span></div>
+        <div title="Code: 0xe873" class="the-icons span3"><i class="bi_doc-folder-a"></i> <span class="i-name">bi_doc-folder-a</span><span class="i-code">0xe873</span></div>
+        <div title="Code: 0xe87f" class="the-icons span3"><i class="bi_doc-news"></i> <span class="i-name">bi_doc-news</span><span class="i-code">0xe87f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe885" class="the-icons span3"><i class="bi_doc-note-pen"></i> <span class="i-name">bi_doc-note-pen</span><span class="i-code">0xe885</span></div>
+        <div title="Code: 0xe89d" class="the-icons span3"><i class="bi_media-negative"></i> <span class="i-name">bi_media-negative</span><span class="i-code">0xe89d</span></div>
+        <div title="Code: 0xe8bd" class="the-icons span3"><i class="bi_ecommerce-market"></i> <span class="i-name">bi_ecommerce-market</span><span class="i-code">0xe8bd</span></div>
+        <div title="Code: 0xe8c8" class="the-icons span3"><i class="bi_ecommerce-shopcart"></i> <span class="i-name">bi_ecommerce-shopcart</span><span class="i-code">0xe8c8</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8d5" class="the-icons span3"><i class="bi_ecommerce-tag-a-s"></i> <span class="i-name">bi_ecommerce-tag-a-s</span><span class="i-code">0xe8d5</span></div>
+        <div title="Code: 0xe8da" class="the-icons span3"><i class="bi_ecommerce-tag-c-s"></i> <span class="i-name">bi_ecommerce-tag-c-s</span><span class="i-code">0xe8da</span></div>
+        <div title="Code: 0xe8e7" class="the-icons span3"><i class="bi_ecommerce-bag-a"></i> <span class="i-name">bi_ecommerce-bag-a</span><span class="i-code">0xe8e7</span></div>
+        <div title="Code: 0xe8f0" class="the-icons span3"><i class="bi_editorial-trash-l"></i> <span class="i-name">bi_editorial-trash-l</span><span class="i-code">0xe8f0</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe91f" class="the-icons span3"><i class="bi_building-cabinet"></i> <span class="i-name">bi_building-cabinet</span><span class="i-code">0xe91f</span></div>
+        <div title="Code: 0xe976" class="the-icons span3"><i class="bi_setting-gear-a"></i> <span class="i-name">bi_setting-gear-a</span><span class="i-code">0xe976</span></div>
+        <div title="Code: 0xe981" class="the-icons span3"><i class="bi_medicine-heart"></i> <span class="i-name">bi_medicine-heart</span><span class="i-code">0xe981</span></div>
+        <div title="Code: 0xe9ae" class="the-icons span3"><i class="bi_location-alt-pin"></i> <span class="i-name">bi_location-alt-pin</span><span class="i-code">0xe9ae</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe9b3" class="the-icons span3"><i class="bi_location-pin-blank"></i> <span class="i-name">bi_location-pin-blank</span><span class="i-code">0xe9b3</span></div>
+        <div title="Code: 0xe9e8" class="the-icons span3"><i class="bi_tool-camera-a"></i> <span class="i-name">bi_tool-camera-a</span><span class="i-code">0xe9e8</span></div>
+        <div title="Code: 0xe9e9" class="the-icons span3"><i class="bi_tool-camera-b"></i> <span class="i-name">bi_tool-camera-b</span><span class="i-code">0xe9e9</span></div>
+        <div title="Code: 0xea03" class="the-icons span3"><i class="bi_user-single-a"></i> <span class="i-name">bi_user-single-a</span><span class="i-code">0xea03</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xea04" class="the-icons span3"><i class="bi_user-single-a-check"></i> <span class="i-name">bi_user-single-a-check</span><span class="i-code">0xea04</span></div>
+        <div title="Code: 0xea05" class="the-icons span3"><i class="bi_user-single-a-cross"></i> <span class="i-name">bi_user-single-a-cross</span><span class="i-code">0xea05</span></div>
+        <div title="Code: 0xea08" class="the-icons span3"><i class="bi_user-single-a-minus"></i> <span class="i-name">bi_user-single-a-minus</span><span class="i-code">0xea08</span></div>
+        <div title="Code: 0xea09" class="the-icons span3"><i class="bi_user-single-a-plus"></i> <span class="i-name">bi_user-single-a-plus</span><span class="i-code">0xea09</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xea28" class="the-icons span3"><i class="bi_weather-cloud-a"></i> <span class="i-name">bi_weather-cloud-a</span><span class="i-code">0xea28</span></div>
+        <div title="Code: 0xea2a" class="the-icons span3"><i class="bi_weather-cloud-rainy-a"></i> <span class="i-name">bi_weather-cloud-rainy-a</span><span class="i-code">0xea2a</span></div>
+        <div title="Code: 0xea2c" class="the-icons span3"><i class="bi_weather-cloud-snow-a"></i> <span class="i-name">bi_weather-cloud-snow-a</span><span class="i-code">0xea2c</span></div>
+        <div title="Code: 0xea2e" class="the-icons span3"><i class="bi_weather-cloud-stormy-a"></i> <span class="i-name">bi_weather-cloud-stormy-a</span><span class="i-code">0xea2e</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xea3c" class="the-icons span3"><i class="bi_web-download"></i> <span class="i-name">bi_web-download</span><span class="i-code">0xea3c</span></div>
+        <div title="Code: 0xea41" class="the-icons span3"><i class="bi_web-logout"></i> <span class="i-name">bi_web-logout</span><span class="i-code">0xea41</span></div>
+        <div title="Code: 0xea4a" class="the-icons span3"><i class="bi_web-share"></i> <span class="i-name">bi_web-share</span><span class="i-code">0xea4a</span></div>
+        <div title="Code: 0xea52" class="the-icons span3"><i class="bi_web-upload"></i> <span class="i-name">bi_web-upload</span><span class="i-code">0xea52</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xea5f" class="the-icons span3"><i class="bi_web-browser-tab"></i> <span class="i-name">bi_web-browser-tab</span><span class="i-code">0xea5f</span></div>
+        <div title="Code: 0xea97" class="the-icons span3"><i class="bi_music-playlist"></i> <span class="i-name">bi_music-playlist</span><span class="i-code">0xea97</span></div>
+        <div title="Code: 0xeab7" class="the-icons span3"><i class="bi_music-cd"></i> <span class="i-name">bi_music-cd</span><span class="i-code">0xeab7</span></div>
+        <div title="Code: 0xeabb" class="the-icons span3"><i class="bi_music-group-note"></i> <span class="i-name">bi_music-group-note</span><span class="i-code">0xeabb</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xeac5" class="the-icons span3"><i class="bi_interface-bottom"></i> <span class="i-name">bi_interface-bottom</span><span class="i-code">0xeac5</span></div>
+        <div title="Code: 0xead6" class="the-icons span3"><i class="bi_interface-circle"></i> <span class="i-name">bi_interface-circle</span><span class="i-code">0xead6</span></div>
+        <div title="Code: 0xeae1" class="the-icons span3"><i class="bi_interface-cmd"></i> <span class="i-name">bi_interface-cmd</span><span class="i-code">0xeae1</span></div>
+        <div title="Code: 0xeae3" class="the-icons span3"><i class="bi_interface-cross"></i> <span class="i-name">bi_interface-cross</span><span class="i-code">0xeae3</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xeaf2" class="the-icons span3"><i class="bi_interface-heart"></i> <span class="i-name">bi_interface-heart</span><span class="i-code">0xeaf2</span></div>
+        <div title="Code: 0xeafa" class="the-icons span3"><i class="bi_interface-left"></i> <span class="i-name">bi_interface-left</span><span class="i-code">0xeafa</span></div>
+        <div title="Code: 0xeb14" class="the-icons span3"><i class="bi_interface-right"></i> <span class="i-name">bi_interface-right</span><span class="i-code">0xeb14</span></div>
+        <div title="Code: 0xeb19" class="the-icons span3"><i class="bi_interface-search"></i> <span class="i-name">bi_interface-search</span><span class="i-code">0xeb19</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xeb22" class="the-icons span3"><i class="bi_interface-thumbnail"></i> <span class="i-name">bi_interface-thumbnail</span><span class="i-code">0xeb22</span></div>
+        <div title="Code: 0xeb23" class="the-icons span3"><i class="bi_interface-tick"></i> <span class="i-name">bi_interface-tick</span><span class="i-code">0xeb23</span></div>
+        <div title="Code: 0xeb24" class="the-icons span3"><i class="bi_interface-top"></i> <span class="i-name">bi_interface-top</span><span class="i-code">0xeb24</span></div>
+        <div title="Code: 0xeb2f" class="the-icons span3"><i class="bi_layout-grid"></i> <span class="i-name">bi_layout-grid</span><span class="i-code">0xeb2f</span></div>
+      </div>
+    </div>
+    <div class="container footer">Generated by <a href="http://fontello.com">fontello.com</a></div>
+  </body>
+</html>
